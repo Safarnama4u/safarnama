@@ -1,0 +1,69 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#0f5c4d;--green2:#174f45;--mint:#eaf5f0;--cream:#fbfaf6;--ink:#17312c;--muted:#63736e;--white:#fff;--shadow:0 14px 40px rgba(22,52,45,.10)}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+button,input{font:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,49,44,.08)}
+.nav-wrap{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand img{width:132px;height:auto;display:block}
+.nav{display:flex;gap:28px;align-items:center;font-weight:650;color:#29443e}
+.nav a:hover{color:var(--green)}
+.menu-btn{display:none;border:0;background:transparent;font-size:28px;color:var(--green)}
+.hero{position:relative;min-height:650px;display:flex;align-items:center;overflow:hidden;background:
+radial-gradient(circle at 78% 26%,rgba(255,207,112,.85) 0 7%,transparent 7.5%),
+linear-gradient(160deg,#bfe6e0 0%,#76c3bb 42%,#245f55 100%)}
+.hero:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-10px;height:42%;background:linear-gradient(150deg,transparent 0 25%,#174f45 26% 46%,#0d4139 47% 100%);clip-path:polygon(0 55%,15% 30%,28% 54%,43% 18%,56% 50%,72% 28%,87% 52%,100% 20%,100% 100%,0 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,48,42,.65),rgba(8,48,42,.12) 75%)}
+.hero-content{position:relative;z-index:2;padding:90px 0 150px;color:white;max-width:760px}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:2px;font-weight:800;margin-bottom:14px}
+.eyebrow.dark{color:var(--green)}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-2px;margin-bottom:22px}
+.hero h1 span{color:#ffe0a0}
+.hero p{font-size:18px;max-width:650px;color:rgba(255,255,255,.9)}
+.search-box{display:flex;background:white;padding:7px;border-radius:16px;max-width:620px;margin-top:30px;box-shadow:0 15px 35px rgba(0,0,0,.18)}
+.search-box input{flex:1;border:0;outline:0;padding:14px 16px;color:var(--ink);min-width:0}
+.search-box button{border:0;background:var(--green);color:white;border-radius:11px;padding:0 22px;font-weight:750;cursor:pointer}
+.search-note{font-size:13px!important;margin-top:9px;color:rgba(255,255,255,.72)!important}
+.section{padding:85px 0}
+.soft{background:var(--mint)}
+.section-heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+.section-heading h2,.guide-panel h2,.tips-box h2{font-size:clamp(30px,5vw,46px);line-height:1.1;letter-spacing:-1px}
+.section-heading>p{max-width:390px;color:var(--muted)}
+.category-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.category-card{border:1px solid rgba(15,92,77,.10);background:white;border-radius:20px;padding:24px 12px;text-align:center;cursor:pointer;box-shadow:0 8px 25px rgba(22,52,45,.05);transition:.2s}
+.category-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.category-card span{display:block;font-size:32px;margin-bottom:8px}
+.category-card strong,.category-card small{display:block}
+.category-card small{color:var(--muted);font-size:12px;margin-top:2px}
+.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.destination-card{background:white;border-radius:24px;overflow:hidden;box-shadow:0 8px 28px rgba(22,52,45,.07)}
+.destination-art{height:220px;display:flex;align-items:center;justify-content:center;font-size:75px;position:relative;overflow:hidden}
+.destination-art:before,.destination-art:after{content:"";position:absolute;border-radius:50%;filter:blur(1px)}
+.mountains-art{background:linear-gradient(160deg,#8bd2cc,#2c776c)}
+.waterfall-art{background:linear-gradient(160deg,#a9e7e2,#317c74)}
+.fort-art{background:linear-gradient(160deg,#d9c39b,#8a6744)}
+.destination-art span{position:relative;z-index:1}
+.card-body{padding:23px}
+.tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--green);background:var(--mint);padding:5px 9px;border-radius:999px}
+.card-body h3{font-size:25px;margin:9px 0 5px}
+.card-body p{color:var(--muted);font-size:14px;margin-bottom:15px}
+.card-body a{color:var(--green);font-weight:750}
+.guide-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.guide-panel>div:first-child p{color:var(--muted);margin-top:16px;max-width:480px}
+.guide-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.guide-list div{background:white;border:1px solid rgba(15,92,77,.08);border-radius:17px;padding:17px}
+.guide-list strong{display:block;font-size:15px;margin-left:27px;margin-top:-25px}
+.guide-list span{display:block;color:var(--muted);font-size:12px;margin-left:27px;margin-top:3px}
+.tips-box{max-width:760px;text-align:center}
+.tips-box p{color:var(--muted);margin:15px auto 0;max-width:650px}
+.footer{background:#103e35;color:white;padding:55px 0 25px}
+.footer-grid{display:flex;justify-content:space-between;gap:30px}
+.footer h3{font-size:28px}
+.footer p{color:rgba(255,255,255,.7)}
+.footer-links{display:flex;gap:22px;flex-wrap:wrap;align-content:flex-start}
+.footer-links a{color:rgba(255,255,255,.8)}
+.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:18px;color:rgba(255,255,255,.55);font-size:12px}
+@media(max-width:850px){.category-grid{grid-template-columns:repeat(3,1fr)}.destination-grid{grid-template-columns:1fr 1fr}.guide-panel{grid-template-columns:1fr}.section-heading{display:block}.section-heading>p{margin-top:12px}.nav{gap:16px}}
+@media(max-width:600px){.nav{display:none;position:absolute;left:4%;right:4%;top:68px;background:white;padding:16px;border-radius:16px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:10px}.menu-btn{display:block}.hero{min-height:640px}.hero-content{padding:70px 0 130px}.hero h1{font-size:45px}.hero p{font-size:16px}.search-box{border-radius:14px}.search-box input{width:100%}.search-box button{padding:12px 16px}.category-grid{grid-template-columns:repeat(2,1fr)}.destination-grid{grid-template-columns:1fr}.guide-list{grid-template-columns:1fr}.section{padding:65px 0}.footer-grid{display:block}.footer-links{margin-top:22px}.brand img{width:120px}}

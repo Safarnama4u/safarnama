@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safarnama — Discover India, one journey at a time. Travel guides, nature destinations, budgets and practical trip information.">
+  <meta name="theme-color" content="#0f5c4d">
+  <title>Safarnama | Discover India, One Journey at a Time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Safarnama home">
+        <img src="assets/logo.png" alt="Safarnama logo">
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#guides">Guides</a>
+        <a href="#tips">Travel Tips</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">🇮🇳 Travel India • Nature • Adventure</span>
+        <h1>Discover India,<br><span>One Journey at a Time.</span></h1>
+        <p>Find beautiful places, practical travel information, budgets, best times to visit and ideas for your next Indian adventure.</p>
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="Where do you want to go?" aria-label="Search destinations">
+          <button id="searchBtn">Explore</button>
+        </div>
+        <p class="search-note" id="searchNote">Try: waterfall, mountain, fort, beach</p>
+      </div>
+    </section>
+
+    <section class="section" id="explore">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow dark">EXPLORE INDIA</span>
+            <h2>Choose your kind of journey</h2>
+          </div>
+          <p>Start with a place or travel experience that matches your mood.</p>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card" data-search="mountains"><span>🏔️</span><strong>Mountains</strong><small>Peaks & escapes</small></button>
+          <button class="category-card" data-search="waterfalls"><span>💦</span><strong>Waterfalls</strong><small>Nature & monsoon</small></button>
+          <button class="category-card" data-search="beaches"><span>🏖️</span><strong>Beaches</strong><small>Sea & sunsets</small></button>
+          <button class="category-card" data-search="forts"><span>🏰</span><strong>Forts</strong><small>History & trails</small></button>
+          <button class="category-card" data-search="nature"><span>🌿</span><strong>Nature</strong><small>Green getaways</small></button>
+          <button class="category-card" data-search="temples"><span>🛕</span><strong>Temples</strong><small>Culture & journeys</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow dark">START EXPLORING</span>
+            <h2>Popular journeys</h2>
+          </div>
+          <p>More destinations will be added as Safarnama grows.</p>
+        </div>
+
+        <div class="destination-grid">
+          <article class="destination-card">
+            <div class="destination-art mountains-art"><span>🏔️</span></div>
+            <div class="card-body"><span class="tag">Mountains</span><h3>Manali</h3><p>Mountain views, valleys, treks and unforgettable Himalayan experiences.</p><a href="#guides">View guide →</a></div>
+          </article>
+          <article class="destination-card">
+            <div class="destination-art waterfall-art"><span>💦</span></div>
+            <div class="card-body"><span class="tag">Waterfalls</span><h3>Dudhsagar</h3><p>A dramatic waterfall journey surrounded by the Western Ghats.</p><a href="#guides">View guide →</a></div>
+          </article>
+          <article class="destination-card">
+            <div class="destination-art fort-art"><span>🏰</span></div>
+            <div class="card-body"><span class="tag">Fort</span><h3>Harihar Fort</h3><p>A famous Maharashtra trek known for its steep rock-cut steps and views.</p><a href="#guides">View guide →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guides">
+      <div class="container guide-panel">
+        <div>
+          <span class="eyebrow dark">TRAVEL GUIDES</span>
+          <h2>Plan before you go.</h2>
+          <p>Every Safarnama destination guide will be built around the information travellers actually need.</p>
+        </div>
+        <div class="guide-list">
+          <div>📍 <strong>Where is it?</strong><span>Location & nearby places</span></div>
+          <div>🚗 <strong>How to reach?</strong><span>Road, rail & local travel</span></div>
+          <div>💰 <strong>What will it cost?</strong><span>Practical budget estimates</span></div>
+          <div>📅 <strong>When to go?</strong><span>Best season & timing</span></div>
+          <div>🎒 <strong>What to carry?</strong><span>Preparation & essentials</span></div>
+          <div>🛡️ <strong>Safety tips</strong><span>Things to keep in mind</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="tips">
+      <div class="container tips-box">
+        <span class="eyebrow dark">TRAVEL SMART</span>
+        <h2>Travel with curiosity. Leave with memories.</h2>
+        <p>Safarnama will focus on useful, easy-to-understand travel information while encouraging responsible tourism and respect for India's natural places.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Safarnama</h3>
+        <p>Discover India, One Journey at a Time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#guides">Guides</a>
+        <a href="#tips">Travel Tips</a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Safarnama. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
